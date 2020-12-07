@@ -14,20 +14,25 @@ int main(){
     scanf("%d",&pilih);
   // memakai switch case agar saat run sistem, kita dapat memilih pilihan yang ada pada daftar
     switch(pilih) {
-
+	// Kita print "Add Dish" untuk menampilkan pilihan pertama
               case 1: 
               printf("Add Dish\n");
               printf("Insert the name of dish : ");
+	// Memakai scanf agar saat menjalankan sistem kita dapat menginput nama makanan yang kita inginkan
               scanf ("%s", &C);
+	// Memakai scanf agar saat menjalankan sistem kita dapat menginput harga makanan yang ada
               scanf("Price of the dish: %d",&rupiah);
                scanf("Quantity of the dish: %d",&quant);
               printf("The dish has been added");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
 
               case 2:
+	// Kita print "Remove Dish" untuk menampilkan pilihan kedua
               printf("Remove Dish\n");
               printf("%-3s","Bude's Menu\n");
               printf("============\n");
+	// Membuat tabel untuk nomer,nama,quantity, dan price
               printf("|%-3s|%-3s|%-3s|%-3s|\n","No.","Name","Quantity","Price");
               printf("|%-3s|%-3s|%-3s|%-3s|\n","1","Telur asin","040","Rp2500");
               printf("|%-3s|%-3s|%-3s|%-3s|\n","2","Tempe orek","030","Rp13000");
@@ -36,34 +41,42 @@ int main(){
               printf("Insert dish's name to be deleted: Telur asin\n");
               printf("The dish has been removed!\n");
               printf("Press enter to continue...\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
 
               case 3:
+	// Kita print "Add Customer" untuk menampilkan pilihan ketiga
               printf("Add Customer\n");
               printf("Insert the customer's name:");
-			  scanf("%s\n",&S1);
+	      scanf("%s\n",&S1);
                printf("Insert the customer's name:");
                scanf("%s",&S2);
               printf("Customer has been added\n");
               printf("Press enter to continue\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
             
               case 4:
+	// Kita print "Search Customer" untuk menampilkan pilihan keempat
               printf("Search Customer\n");
               printf("Insert the customer’s name to be searched:");
               scanf("%s",&S3);
               printf("%s is not present\n",S3);
               printf("Press enter to continue...\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
               
                case 5:
+	// Kita print "View Warteg" untuk menampilkan pilihan kelima
               printf("View Warteg\n");
               printf("Customer's List");
               printf("12. %s",S2);
               printf("Press enter to continue...\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
               
                case 6:
+	// Kita print "Order" untuk menampilkan pilihan keenam
               printf("Order\n");
               printf("Insert the customer’s name: %s",S2);
               printf("Insert the amount of dish: ");
@@ -74,9 +87,11 @@ int main(){
             scanf("%s %d",&M2,&banyak2);
               printf("Order Success!\n");
               printf("Press enter to continue...\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
               
                case 7:
+	// Kita print "Payment" untuk menampilkan pilihan ketujuh
               printf("Payment\n");
               printf("Insert the customers' index:");
               scanf("%d",&nomer);
@@ -94,9 +109,11 @@ int main(){
               else if(M2=="Buncis") hasil2=banyak2*6000;
               printf("Total: Rp%d\n",hasil1+hasil2);
               printf("Press enter to continue...\n");
+	// Memakai break, agar sistem tidak melakukan run terus-menerus
               break;
               
               case 8:
+	// Kita print "Exit Warteg" untuk menampilkan pilihan kedelapan
               	printf("Exit Warteg\n");
               	printf("Please expand your terminal to full screen!\n");
               	printf("Please enter to continue...\n");

@@ -2,16 +2,17 @@
 
 
 int main(){
+// Masukkan data-data yang akan kita pakai untuk memilih suatu data
     int pilih, premium,dollar, rupiah,quant,nomer,banyak1,banyak2,hasil1,hasil2;
     char C[255], S1[255], S2[255], S3[255], M[255], M2[255];
     float fah, celcius;
-  
+	// Print sistem, tanggal, dan daftar pilihan pada sistem
   	printf("System: Windows OSX\n");
   	printf("Mon Mar 30 15:21:14 2020\n");
     printf("1.Add Dish\n2.Remove Dish\n3.Add Customer\n4.Search Customer\n5.View Warteg\n6.Order\n7.Payment\n8.Exit warteg\n\n");
     printf("masukkan pilihan: ");
     scanf("%d",&pilih);
-  
+  // memakai switch case agar saat run sistem, kita dapat memilih pilihan yang ada pada daftar
     switch(pilih) {
 
               case 1: 
@@ -49,7 +50,7 @@ int main(){
             
               case 4:
               printf("Search Customer\n");
-              printf("Insert the customer’s name to be searched:");
+              printf("Insert the customerâ€™s name to be searched:");
               scanf("%s",&S3);
               printf("%s is not present\n",S3);
               printf("Press enter to continue...\n");
@@ -64,7 +65,7 @@ int main(){
               
                case 6:
               printf("Order\n");
-              printf("Insert the customer’s name: %s",S2);
+              printf("Insert the customerâ€™s name: %s",S2);
               printf("Insert the amount of dish: ");
               scanf("%d",&nomer);
               printf("[1] Insert the dish's name and quantity:");
@@ -102,6 +103,7 @@ int main(){
               default:
               printf("input hanya dari 1-8 !!!");
         }
+// Bagian terakhir, print kata "terima kasih"
     printf("\nTerimakasih");
     
 }
